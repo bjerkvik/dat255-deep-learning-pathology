@@ -1,7 +1,43 @@
-DAT255 Course Project
+# DAT255 Course Project
 ==============================
 
 A deep learning project for pathology as part of the DAT255 course.
+
+## Getting Started
+
+### Prerequisites
+
+### Installing
+
+## Dataset
+
+The dataset used in this project consists of pathology images and accompanying metadata. Due to the size of the dataset, it is not included in the repository. To obtain the dataset, download the images and CSV files from the following links:
+
+- [Dropbox link to PNAS-images folder](https://www.dropbox.com/s/jka111c16q8cn6x/PNAS-images.zip)
+- [Dropbox link to CSV files](https://www.dropbox.com/s/zogil8mxr2p9ajy/pathfusion.zip)
+
+Once you have downloaded the dataset, follow these steps:
+
+1. Place the `PNAS-images` folder inside the `data/raw` directory.
+2. Place the four CSV files inside the `data/raw` directory alongside the `PNAS-images` folder.
+
+The project is configured to work with this data directory structure.
+
+## Running the tests
+
+### Break down into end-to-end tests
+
+## Deployment
+
+## Built With
+
+## Authors
+
+## License
+
+## Acknowledgments
+
+
 
 Project Organization
 ------------
