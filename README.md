@@ -52,6 +52,8 @@ To use the Gradio app, follow these steps:
 2. Upload a histopathology image (96x96 pixels) using the file picker.
 3. The app will display the prediction for the presence of tumor tissue in the image.
 
+Due to compatibility issues, the original model trained on Windows did not work on Hugging Face. I then retrained the model on WSL and used resnet34 instead of resnet26d.
+
 ## Results and Achievements
 
 Our deep learning model achieved an accuracy of [0.97]
