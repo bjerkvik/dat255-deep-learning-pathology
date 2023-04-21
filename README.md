@@ -3,91 +3,57 @@
 
 A deep learning project for pathology as part of the DAT255 course.
 
-## Getting Started
+## Table of Contents
 
-### Prerequisites
+- [Background and Objectives](#background-and-objectives)
+- [Methods and Data](#methods-and-data)
+- [Project Structure](#project-structure)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [Results and Achievements](#results-and-achievements)
 
-### Installing
+## Background and Objectives
 
-## Dataset
+Cancer is one of the leading causes of death worldwide, and early detection plays a crucial role in improving patient outcomes. Histopathology images are commonly used in the diagnosis of cancer, as they provide detailed information about the cellular structure of tissues. In this project, I aimed to develop a model capable of detecting cancer tumors in histopathology images.
 
-The dataset used in this project consists of pathology images and accompanying metadata. Due to the size of the dataset, it is not included in the repository. To obtain the dataset, download the images and CSV files from the following links:
+## Methods and Data
 
-- [Dropbox link to PNAS-images folder](https://www.dropbox.com/s/jka111c16q8cn6x/PNAS-images.zip)
-- [Dropbox link to CSV files](https://www.dropbox.com/s/zogil8mxr2p9ajy/pathfusion.zip)
+To create the model, I used the [Histopathologic Cancer Detection](https://www.kaggle.com/competitions/histopathologic-cancer-detection/data) dataset, which consists of histopathology images of tumor tissue and non-tumor tissue. I used the fastai library for creating the deep learning model and the timm library to access additional model architectures. We chose the 'resnet26d' architecture for our model.
+
+## Project Structure
+
+The project repository contains the following files and folders:
+
+- `notebooks/`: Folder containing the Jupyter Notebook for training and exporting the model.
+- `app.py`: A Gradio app that uses the trained model to predict cancer tumors in histopathology images.
+- `model.pkl`: The exported model file.
+- `requirements.txt`: A list of Python packages required to run the app.
+- `LICENSE`: The license for this project.
+- `README.md`: The documentation for this project.
+
+## Setup and Installation
+
+The dataset used in this project consists of pathology images and accompanying metadata. Due to the size of the dataset, it is not included in the repository. To obtain the dataset, download the images and CSV file from the following link:
+
+- [Kaggle - Histopathologic Cancer Detection](https://www.kaggle.com/competitions/histopathologic-cancer-detection)
 
 Once you have downloaded the dataset, follow these steps:
 
-1. Place the `PNAS-images` folder inside the `data/raw` directory.
-2. Place the four CSV files inside the `data/raw` directory alongside the `PNAS-images` folder.
+1. Place the `train` folder inside the `data/raw` directory.
+2. Place the four CSV file inside the `data/raw` directory alongside the `train` folder.
 
-The project is configured to work with this data directory structure.
+## Usage
 
-## Running the tests
+The Gradio app is hosted on [Hugging Face](https://huggingface.co/spaces/trymbjerkvik/histopath-cancer-detector)
 
-### Break down into end-to-end tests
+To use the Gradio app, follow these steps:
 
-## Deployment
+1. Click on the Hugging Face link.
+2. Upload a histopathology image (96x96 pixels) using the file picker.
+3. The app will display the prediction for the presence of tumor tissue in the image.
 
-## Built With
+## Results and Achievements
 
-## Authors
+Our deep learning model achieved an accuracy of [0.97]
 
-## License
-
-## Acknowledgments
-
-
-
-Project Organization
-------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<img width="239" alt="image" src="https://user-images.githubusercontent.com/54101071/233719132-5cb80c0d-711a-4f70-a798-f51dfaaf695a.png">
