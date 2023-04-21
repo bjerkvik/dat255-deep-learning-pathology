@@ -56,6 +56,6 @@ Due to compatibility issues, the original model trained on Windows did not work 
 
 ## Results and Achievements
 
-Our deep learning model achieved an accuracy of [0.97]
+Our deep learning model achieved an accuracy of 0.97.
 
 <img width="239" alt="image" src="https://user-images.githubusercontent.com/54101071/233719132-5cb80c0d-711a-4f70-a798-f51dfaaf695a.png">
