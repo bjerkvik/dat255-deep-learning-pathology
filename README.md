@@ -40,7 +40,7 @@ The dataset used in this project consists of pathology images and accompanying m
 Once you have downloaded the dataset, follow these steps:
 
 1. Place the `train` folder inside the `data/raw` directory.
-2. Place the four CSV file inside the `data/raw` directory alongside the `train` folder.
+2. Place the CSV file inside the `data/raw` directory alongside the `train` folder.
 
 ## Usage
 
