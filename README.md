@@ -26,8 +26,8 @@ The project repository contains the following files and folders:
 
 - `notebooks/`: Folder containing the Jupyter Notebook for training and exporting the model.
 - `app.py`: A Gradio app that uses the trained model to predict cancer tumors in histopathology images.
-- `model.pkl`: The exported model file.
-- `requirements.txt`: A list of Python packages required to run the app.
+- `models/`: Folder containing the exported model files.
+- `requirements.txt`: A list of Python packages required to run the app (+++).
 - `LICENSE`: The license for this project.
 - `README.md`: The documentation for this project.
 
@@ -56,6 +56,6 @@ Due to compatibility issues, the original model trained on Windows did not work 
 
 ## Results and Achievements
 
-Our deep learning model achieved an accuracy of 0.97.
+The deep learning model achieved an accuracy of 0.97. I did not use a validation set?, so there is a possibility of some overtraining.
 
 <img width="239" alt="image" src="https://user-images.githubusercontent.com/54101071/233719132-5cb80c0d-711a-4f70-a798-f51dfaaf695a.png">
