@@ -24,7 +24,7 @@ To create the model, I used the [Histopathologic Cancer Detection](https://www.k
 
 The project repository contains the following files and folders:
 
-- `notebooks/`: Folder containing the Jupyter Notebook for training and exporting the model.
+- `notebooks/`: Folder containing the Jupyter Notebook for training and exporting the model. The latest notebook used to train the final model is `model-2.ipynb`.
 - `app.py`: A Gradio app that uses the trained model to predict cancer tumors in histopathology images.
 - `models/`: Folder containing the exported model files.
 - `requirements.txt`: A list of Python packages required to run the app (+++).
