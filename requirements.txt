@@ -145,7 +145,7 @@ spacy-legacy==3.0.12
 spacy-loggers==1.0.4
 srsly==2.4.6
 stack-data==0.6.2
-starlette==0.26.1
+starlette==0.27.0
 sympy==1.11.1
 terminado==0.17.1
 text-unidecode==1.3
